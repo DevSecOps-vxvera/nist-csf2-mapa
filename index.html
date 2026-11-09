@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Mapa interactivo NIST CSF 2.0: funciones, categorías, resultados y ejemplos ilustrativos para industria, finanzas y retail.">
+  <meta name="theme-color" content="#0c1726">
+  <title>Mapa interactivo · NIST CSF 2.0</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#inicio" aria-label="Inicio"><span class="brand-mark">N</span><span>MAPA <b>CSF 2.0</b></span></a><nav><a href="#mapa">Explorar mapa</a><a href="#acerca">Acerca del marco</a><a href="#fuentes">Fuentes</a></nav><span class="offline-tag"><i></i> Exploración sin conexión</span></header>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">MARCO DE CIBERSEGURIDAD · NIST</p><h1>De los resultados<br>al <em>trabajo real.</em></h1><p class="hero-lede">Explora las seis funciones del CSF 2.0. Abre una categoría para ver cada resultado y ejemplos de aplicación en industria, finanzas y retail.</p><a class="cta" href="#mapa">Explorar las funciones <span>↓</span></a></div>
+      <div class="hero-graphic" aria-label="Seis funciones conectadas al centro de gestión de riesgo"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hub"><span>CSF</span><small>gestión<br>de riesgo</small></div><div class="orb orb-gv">GV</div><div class="orb orb-id">ID</div><div class="orb orb-pr">PR</div><div class="orb orb-de">DE</div><div class="orb orb-rs">RS</div><div class="orb orb-rc">RC</div><div class="spark s1">✳</div><div class="spark s2">✳</div></div>
+    </section>
+    <section class="notice"><span class="notice-icon">i</span><p><b>CSF no es un catálogo prescriptivo de controles.</b> NIST organiza resultados deseados en funciones, categorías y subcategorías. Los ejemplos de este mapa son ideas ilustrativas para iniciar una conversación de implementación; no son controles oficiales ni sustituyen la evaluación de riesgo, las obligaciones regulatorias o el criterio profesional.</p></section>
+    <section id="mapa" class="map-section"><div class="section-heading"><div><p class="eyebrow">EL NÚCLEO DEL MARCO</p><h2>Explora el mapa</h2><p>Selecciona una función o busca por código y tema.</p></div><div class="stats"><div><b>6</b><span>funciones</span></div><div><b>22</b><span>categorías</span></div><div><b>106</b><span>resultados</span></div></div></div>
+      <div class="toolbar"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar código o tema (ej. MFA, proveedor…)" aria-label="Buscar resultados"></label><div class="sector-filter" role="group" aria-label="Filtrar por sector"><button class="sector active" data-sector="Todos">Todos</button><button class="sector" data-sector="Industria">Industria</button><button class="sector" data-sector="Financiero">Financiero</button><button class="sector" data-sector="Retail">Retail</button></div></div>
+      <div id="functions" class="function-grid" aria-label="Funciones NIST"></div>
+      <div id="detail" class="detail" aria-live="polite"><div class="empty-state"><div class="empty-icon">↗</div><h3>Elige una función para empezar</h3><p>Verás sus categorías; abre cualquiera para explorar los resultados y ejemplos sectoriales.</p></div></div>
+      <div id="search-results" class="search-results" hidden></div>
+    </section>
+    <section id="acerca" class="about"><div><p class="eyebrow">UNA GUÍA PARA CONVERSAR</p><h2>Seis funciones.<br>Un ciclo continuo.</h2><p>NIST plantea que las funciones se aborden concurrentemente. Gobernar informa cómo se implementan las otras cinco; identificar, proteger y detectar son continuas, mientras responder y recuperar deben estar preparadas para activarse ante incidentes.</p><a href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf" target="_blank" rel="noopener">Leer la publicación oficial de NIST ↗</a></div><div class="cycle"><div class="cycle-center">GESTIONAR<br><small>el riesgo</small></div><div class="cycle-item c-gv">01 · Gobernar</div><div class="cycle-item c-id">02 · Identificar</div><div class="cycle-item c-pr">03 · Proteger</div><div class="cycle-item c-de">04 · Detectar</div><div class="cycle-item c-rs">05 · Responder</div><div class="cycle-item c-rc">06 · Recuperar</div></div></section>
+    <section id="fuentes" class="sources"><p class="eyebrow">REFERENCIAS</p><h2>Fuentes y alcance</h2><div class="source-grid"><article><b>Fuente principal</b><p>NIST, <i>The NIST Cybersecurity Framework (CSF) 2.0</i>, CSWP 29 (2024). Base para nombres, estructura, identificadores y descripciones resumidas.</p><a href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf" target="_blank" rel="noopener">Abrir PDF oficial ↗</a></article><article><b>Catálogo consultable</b><p>Herramienta de referencia CSF 2.0 de NIST: Core y ejemplos de implementación en formatos legibles y descargables.</p><a href="https://csrc.nist.gov/projects/cybersecurity-framework/filters" target="_blank" rel="noopener">Abrir herramienta NIST ↗</a></article><article><b>Cómo leer los ejemplos</b><p>Los tres ejemplos por resultado fueron redactados para este material. Son escenarios hipotéticos; no describen organizaciones reales, certificaciones ni exigencias específicas de un sector.</p></article></div><p class="copyright">NIST CSF 2.0 es una publicación de NIST. Esta página educativa no es una publicación ni un aval de NIST.</p></section>
+  </main>
+  <footer><span>MAPA CSF 2.0</span><span>Una herramienta de exploración para equipos de riesgo y tecnología.</span><a href="#inicio">Volver arriba ↑</a></footer>
+  <script src="data.js"></script><script src="app.js"></script>
+</body></html>
